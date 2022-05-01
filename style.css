@@ -91,6 +91,20 @@ ul li a:hover {
 
 .hero-txt {
     font-size: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-txt::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    animation: typing2 3s 1;
+    overflow: hidden;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;  
+    left: 0;
 }
 
 .wrapper {
@@ -106,6 +120,19 @@ ul li a:hover {
 
 .static {
     top: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.static::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    animation: typing2 2s 1;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;  
+    left: 0;
 }
 
 .wrapper .dynamic {
@@ -141,7 +168,14 @@ ul li a:hover {
         top: -210px;
     }
 }
-
+@keyframes typing2 {
+    25% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
 @keyframes typing {
 
     40%,
@@ -211,6 +245,7 @@ ul li a:hover {
 .about {
     color: rgb(90, 90, 90);
     padding: 80px;
+    position: relative;
 }
 
 .color {
@@ -224,6 +259,7 @@ ul li a:hover {
     font-size: 70px;
     color: rgb(204, 172, 113);
 }
+
 
 .about-txt2 {
     color: rgb(79, 75, 75);
