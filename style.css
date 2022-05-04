@@ -130,7 +130,7 @@ ul li a:hover {
     height: 100%;
     width: 100%;
     animation: typing2 2s 1;
-    animation-delay: 9s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;  
     left: 0;
 }
@@ -150,6 +150,7 @@ ul li a:hover {
     font-weight: 500;
     position: relative;
     animation: slide 9s steps(3) infinite;
+    animation-delay: 10s;
 }
 
 .dynamic li::after {
@@ -161,6 +162,7 @@ ul li a:hover {
     width: 100%;
     /* border-left: 2px solid white; */
     animation: typing 3s steps(10) infinite;
+    animation-delay: 10s;
 }
 
 @keyframes slide {
