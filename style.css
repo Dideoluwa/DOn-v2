@@ -24,6 +24,26 @@ body {
     width: 100%;
     z-index: 100;
 }
+.img-container{
+    transform: translateX(30%);
+    overflow: hidden;
+    border-radius: 25px;
+    width: 60%;
+    height: 50%;
+    margin-bottom: 8%;
+}
+.img-container img{
+    cursor: pointer;
+    width: 100%;
+    height: 20%;
+    /* padding: 20px; */
+    transition: all .4s ease-in-out;
+    opacity: 0.7;
+}
+.img-container:hover img{
+    transform: scale(1.1);
+    opacity: 1;
+}
 
 #logo {
     display: none;
@@ -393,6 +413,24 @@ footer {
 }
 
 @media screen and (max-width: 912px) {
+    .img-container{
+        transform: translateX(0%);
+        overflow: hidden;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 8%;
+    }
+    .img-container img{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        transition: all .4s ease-in-out;
+        opacity: 1;
+    }
+    .img-container:hover img{
+        transform: scale(1.1);
+    }
     .welcome-para {
         display: none;
     }
@@ -621,6 +659,24 @@ footer {
 
     .hero-list {
         display: none;
+    }
+    .img-container{
+        transform: translateX(0%);
+        overflow: hidden;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 8%;
+    }
+    .img-container img{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        transition: all .4s ease-in-out;
+        opacity: 1;
+    }
+    .img-container:hover img{
+        transform: scale(1.1);
     }
 
     .mobile-menu {
