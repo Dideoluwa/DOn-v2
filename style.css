@@ -241,9 +241,16 @@ ul li a:hover {
     cursor: pointer;
     float: right;
 }
-
+.bar1{
+    width: 30px;
+}
+.bar2{
+    width: 20px;
+}
+.cover{
+    z-index: 100;
+}
 #hamburger-icon div {
-    width: 45px;
     height: 3px;
     background-color: white;
     margin: 6px 0;
@@ -253,10 +260,9 @@ ul li a:hover {
 #hamburger-icon div .open {
     display: block;
 }
-
 .open .bar1 {
-    -webkit-transform: rotate(-135deg) translate(-4px, 6px);
-    transform: rotate(-45deg) translate(-4px, 6px);
+    -webkit-transform: rotate(-135deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-8px, 7px);
 }
 
 .open .bar2 {
@@ -264,8 +270,8 @@ ul li a:hover {
 }
 
 .open .bar3 {
-    -webkit-transform: rotate(135deg) translate(-4px, 6px);
-    transform: rotate(45deg) translate(-4px, 6px);
+    -webkit-transform: rotate(135deg) translate(-6px, 8px);
+    transform: rotate(45deg) translate(-6px, -4px);
 }
 
 .open .mobile-menu {
@@ -275,18 +281,26 @@ ul li a:hover {
     justify-content: space-between;
     width: 150vw;
 }
-
+.close{
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
 .mobile-menu {
     display: none;
     position: fixed;
     align-items: center;
     /* right: 12%; */
-    z-index: 1;
+    /* z-index: 1; */
+    top: -100%;
     padding: 100px;
     /* height: 100vh; */
     opacity: 1;
-    background-color: black;
-    color: blanchedalmond;
+    background-color: rgba(0,0,0,0.97);
+    /* opacity: 1; */
+    color: white;
 }
 
 .about {
@@ -546,11 +560,6 @@ footer {
         font-size: 30px;
     }
 
-    #hamburger-icon {
-        display: block;
-        color: white;
-    }
-
     .hero-list {
         display: none;
     }
@@ -698,7 +707,7 @@ footer {
         display: none;
         position: fixed;
         /* font-size: 27px; */
-        top: 5%;
+        top: 0%;
         right: 0%;
         z-index: 1;
         height: 100vh;
@@ -716,13 +725,7 @@ footer {
         font-size: 25px;
     }
 
-    #hamburger-icon div {
-        width: 45px;
-        height: 3px;
-        background-color: white;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
+
 
     .hero-info {
         /* padding: 50px; */
@@ -827,10 +830,7 @@ footer {
         font-size: 20px;
     }
 
-    #hamburger-icon {
-        display: block;
-        color: white;
-    }
+   
 
     .hero-info {
         /* padding: 50px; */

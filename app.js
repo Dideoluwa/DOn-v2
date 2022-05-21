@@ -136,15 +136,17 @@
 // })
 // tl13.fromTo('.contact' , {opacity: 0} , {opacity : 1})
 
-
+let menu = document.querySelector('#hamburger-icon')
+let mobile = document.querySelector('.mobile-menu')
 const myPreloader = document.querySelector('.preloader');
 
 const fadeOutEffect = setInterval(() => {
     myPreloader.style.display = 'none'
   }, 8000);
 
-function toggleMobileMenu(menu) {
-    menu.classList.toggle('open');
-}
+menu.addEventListener('click' , function(){
+  menu.classList.toggle('open');
+  mobile.style.top = '0%'
+})
 
 // window.addEventListener('load', fadeOutEffect);
