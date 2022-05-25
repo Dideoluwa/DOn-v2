@@ -290,6 +290,7 @@ ul li a:hover {
     font-size: 35px;
     position: absolute;
     right: 0%;
+    padding: 12px;
     top: 0%;
 }
 .mobile-menu {
