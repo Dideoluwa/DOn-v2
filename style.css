@@ -249,6 +249,10 @@ ul li a:hover {
 }
 .cover{
     z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 12px;
 }
 #hamburger-icon div {
     height: 3px;
