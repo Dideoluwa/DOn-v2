@@ -748,7 +748,7 @@ footer {
         display: none;
     }
     .img-container{
-        transform: translateX(0%);
+        /* transform: translateX(0%); */
         overflow: hidden;
         border-radius: 0px;
         width: 100%;
@@ -767,7 +767,8 @@ footer {
         opacity: 1;
     }
     .img-container:hover img{
-        transform: scale(1.1);
+        transform: scale(1.1) translateX(13%);
+        /* transform: scale(1.1); */
     }
 
     .mobile-menu {
