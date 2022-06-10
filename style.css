@@ -466,6 +466,7 @@ span a:hover {
 .contact-txt {
     text-align: center;
     font-size: 40px;
+    font-style: bold;
     color: rgb(44, 44, 44);
 }
 
@@ -473,6 +474,7 @@ span a:hover {
     display: flex;
     justify-content: space-around;
     font-size: 30px;
+    margin-bottom: 22px;
 }
 
 .contact-links p a {
@@ -882,12 +884,13 @@ footer {
     .contact-links {
         display: flex;
         justify-content: space-around;
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 0px;
     }
 
     footer {
         text-align: center;
-        font-size: 17px;
+        font-size: 14px;
         padding: 20px;
     }
 }
@@ -961,7 +964,7 @@ footer {
     }
     footer {
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;
         padding: 20px;
     }
 .contact-head{
@@ -977,6 +980,6 @@ footer {
     .contact-links {
         display: flex;
         justify-content: space-around;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
