@@ -585,7 +585,7 @@ footer {
     .arrow img{
         position: relative;
         left: 50%;
-        transform: translate(80% ,500%);
+        transform: translateX(80% ,500%);
     }    
     .wrapper .static {
         color: white;
@@ -845,7 +845,7 @@ footer {
     }
 
     .arrow img{
-        margin-top: 190px;
+        margin-top: 40px;
         width: 30px;
     }
 
