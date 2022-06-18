@@ -164,6 +164,14 @@ ul li a:hover {
     transform: translateX(20%);
     top: 190px;
 }
+.arrow img{
+    position: relative;
+    left: 50%;
+    transform: translateY(200%);
+    cursor: pointer;
+    width: 60px;
+    animation: arrow 2s infinite;
+}
 
 .hero-txt {
     font-size: 70px;
@@ -245,6 +253,17 @@ ul li a:hover {
 @keyframes slide {
     100% {
         top: -210px;
+    }
+}
+@keyframes arrow {
+    0% {
+        top: -20px;
+    }
+    50% {
+        top: 0px;
+    }
+    100% {
+        top: -20px;
     }
 }
 @keyframes typing2 {
@@ -563,6 +582,11 @@ footer {
         font-size: 62px;
     }
 
+    .arrow img{
+        position: relative;
+        left: 50%;
+        transform: translate(80% ,500%);
+    }    
     .wrapper .static {
         color: white;
         font-size: 50px;
@@ -661,6 +685,14 @@ footer {
         font-size: 40px;
     }
 
+    .arrow img{
+        position: relative;
+        left: 50%;
+        transform: translateY(220%);
+        cursor: pointer;
+        width: 50px;
+    }
+
     .wrapper .static {
         color: white;
         font-size: 32px;
@@ -719,11 +751,6 @@ footer {
         font-size: 30px;
     }
 
-    .hero-info {
-        padding: 0px;
-        padding-left: 30px;
-        transform: translateX(0);
-    }
 
     .about-txt2 {
         color: rgb(79, 75, 75);
@@ -802,16 +829,24 @@ footer {
 
 
     .hero-info {
-        /* padding: 50px; */
         height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0px;
+        padding-left: 30px;
+        transform: translateX(0);
+        transform: translateY(20%);
         align-items: center;
     }
 
     .hero-txt {
         font-size: 31.5px;
+    }
+
+    .arrow img{
+        margin-top: 190px;
+        width: 30px;
     }
 
     .wrapper .static {
@@ -909,11 +944,12 @@ footer {
    
 
     .hero-info {
-        /* padding: 50px; */
         height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0px;
+        padding-left: 30px;
         align-items: center;
     }
 
