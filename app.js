@@ -14,18 +14,18 @@ menu.addEventListener('click', function () {
 })
 
 window.addEventListener('scroll', () => {
- // console.log(window.scrollY)//
-  if (window.scrollY >= 1250) {
+ console.log(window.scrollY)//
+  if (window.scrollY >= 1460) {
     hero.classList.remove('init-scroll')
     hero.classList.add('second-scroll')
-  } else if (window.scrollY >= 930) {
+  } else if (window.scrollY >= 1180) {
     cover.classList.remove('mobile-cover2')
     cover.classList.add('mobile-cover')
   }
-  else if (window.scrollY >= 400) {
+  else if (window.scrollY >= 640) {
     hero.classList.remove('second-scroll')
     hero.classList.add('init-scroll')
-  } else if (window.scrollY >= 360) {
+  } else if (window.scrollY >= 610) {
     cover.classList.remove('mobile-cover')
     cover.classList.add('mobile-cover2')
   } //else if (window.scrollY < 930 && window.scrollY > 360 ) {

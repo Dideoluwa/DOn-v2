@@ -65,7 +65,7 @@ body {
 header {
     background-color: black;
     color: white;
-    height: 60vh;
+    height: 100vh;
 }
 
 .hero {
@@ -160,8 +160,9 @@ ul li a:hover {
 
 .hero-info {
     padding: 60px;
-    position: relative;
-    top: 70px;
+    position: absolute;
+    transform: translateX(20%);
+    top: 190px;
 }
 
 .hero-txt {
@@ -230,7 +231,7 @@ ul li a:hover {
 }
 
 .dynamic li::after {
-    content: " ";
+    content: "";
     position: absolute;
     left: 0;
     background-color: black;
@@ -551,6 +552,7 @@ footer {
     .hero-info {
         /* padding: 50px; */
         height: 50vh;
+        transform: translateX(0);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -719,6 +721,8 @@ footer {
 
     .hero-info {
         padding: 0px;
+        padding-left: 30px;
+        transform: translateX(0);
     }
 
     .about-txt2 {
@@ -728,7 +732,7 @@ footer {
     }
 
     header {
-        height: 60vh;
+        height: 100vh;
     }
 
     .cover {
