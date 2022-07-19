@@ -428,14 +428,19 @@ span a:hover {
 }
 
 .port-head {
-    text-align: center;
+    display: flex;
     /* font-family: 'Poppins', sans-serif; */
-    font-size: 70px;
-    padding: 50px;
+    /* padding: 50px; */
 }
-
+.port-head p{
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
 .port-head2 {
     font-size: 50px;
+    margin: 0px 80px;
     line-height: 90px;
 }
 
@@ -466,11 +471,9 @@ span a:hover {
 
 .port-txt {
     font-size: 30px;
+    margin: 0px 80px;
 }
 
-.contact {
-    /* background-color: rgb(241, 241, 241); */
-}
 
 .contact-cover {
     padding: 50px;
@@ -483,8 +486,11 @@ span a:hover {
     color: rgb(44, 44, 44);
 }
 
-.contact-txt {
-    text-align: center;
+.contact-txt{
+    display: flex;
+}
+.contact-txt p {
+   margin: auto;
     font-size: 40px;
     font-style: bold;
     color: rgb(44, 44, 44);
@@ -527,6 +533,12 @@ footer {
 }
 
 @media screen and (max-width: 912px) {
+    .port-head2 {
+        margin: 0px 0px;
+    }
+    .port-txt {
+        margin: 0px 0px;
+    }
     .img-container{
         transform: translateX(0%);
         overflow: hidden;
@@ -718,14 +730,39 @@ footer {
     .about {
         padding: 0;
     }
+    .port-head p{
+        font-size: 35px; 
+    }
+    .contact-txt p{
+        font-size: 30px; 
+    }
+    .contact-links {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
 
+    .port-head2{
+        font-size: 30px;
+    }
+    .port-txt {
+        font-size: 20px;
+        margin: 0px 0px;
+    }
+    footer {
+        text-align: center;
+        font-size: 17px;
+        padding: 20px;
+        color: rgb(106, 106, 106);
+    }
     .about-txt {
         font-size: 45px;
     }
 
     .about-txt2 {
         color: rgb(79, 75, 75);
-        font-size: 30px;
+        font-size: 20px;
         padding: 0px;
     }
 
@@ -881,9 +918,9 @@ footer {
         padding: 10px;
     }
 
-    .port-head {
+    .port-head p{
         text-align: center;
-        font-size: 30px;
+       font-size: 28px;
         padding: 0px;
         margin-top: 50px;
         margin-bottom: 10px;
@@ -912,9 +949,13 @@ footer {
         text-align: center;
         color: rgb(44, 44, 44);
     }
-
     .contact-txt {
-        text-align: center;
+        display: flex;
+    }
+    .contact-txt p{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
         font-size: 22px;
         color: rgb(44, 44, 44);
         margin-bottom: 15px;
@@ -989,7 +1030,7 @@ footer {
         font-size: 30px;
     }
 
-    .port-head {
+    .port-head p{
         font-size: 30px;
     }
 
@@ -1010,9 +1051,10 @@ footer {
 .contact-head{
     margin-top: 0px;
 }
-    .contact-txt {
+    .contact-txt p{
         text-align: center;
         font-size: 18px;
+        margin-top: 0px;
         margin-bottom: 10px;
         color: rgb(44, 44, 44);
     }
